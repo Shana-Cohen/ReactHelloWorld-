@@ -3,6 +3,7 @@ import PersonForm from './PersonForm';
 import PersonRow from './PersonRow';
 
 class PeopleTable extends React.Component {
+
     state = {
         people: [],
         firstName: '',
@@ -72,8 +73,7 @@ class PeopleTable extends React.Component {
                     onChangeWeight={this.onChangeWeight}
                     onAddClick={this.onAddClick}
                     onClearClick={this.onClearClick} />
-
-                {this.populateTable()};
+                {this.populateTable()}
             </div>
         )
     }
